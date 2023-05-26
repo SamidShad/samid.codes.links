@@ -1,0 +1,186 @@
+// IMPORT FONTS ->>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+// IMPORT FONTS ->>
+
+// MIXIN FUNCTION ->>
+@mixin Flex($parameter) {
+  display: flex;
+  justify-content: $parameter;
+  align-items: center;
+}
+// MIXIN FUNCTION ->>
+
+// NAVBAR ->>
+.nav_area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  top: 2%;
+}
+
+.navbar {
+  @include Flex(space-around);
+  margin: 10px;
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 60px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.2px);
+  -webkit-backdrop-filter: blur(11.2px);
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.53);
+}
+
+.logo {
+  color: white;
+}
+// NAVBAR ->>
+
+// MAIN AREA ->>
+.banner {
+  background: url("./assets/banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+}
+
+.main_page {
+  background-color: #121212;
+  position: absolute;
+  margin-top: 100px;
+  z-index: -1;
+  width: 100%;
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.profile_area {
+  @include Flex(center);
+  flex-direction: column;
+  margin-top: 250px;
+}
+
+.profile_pic {
+  z-index: 1;
+}
+
+.profile_name {
+  text-align: center;
+  z-index: 2;
+  color: white;
+  margin-top: 5px;
+}
+
+.profile_description {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 10px;
+  color: white;
+}
+
+.profile_description:nth-child(3) {
+  color: #fe0011;
+  font-weight: 600;
+}
+
+// MAIN AREA ->>
+
+// LINK CARDS AREA ->>
+
+.link_page {
+  @include Flex(space-evenly);
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.link_card {
+  @include Flex(center);
+  width: 300px;
+  max-width: 300px;
+  margin: 10px 10px 20px 10px;
+  color: white;
+  border: 5px solid #af1f28;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.link_icons {
+  font-size: 75px;
+}
+
+.btn {
+  padding: 10px 30px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #af1f28;
+  background-image: linear-gradient(
+    45deg,
+    #af1f28 0%,
+    #fe0011 51%,
+    #af1f28 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+// LINK CARDS AREA ->>
+
+// URL TEXT ->>
+.linkUrl {
+  text-decoration: none;
+  color: white;
+}
+// URL TEXT ->>
+
+// BUTTON ->>
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+// BUTTON ->>
+
+// DISABLED BUTTON ->>
+.disbtn {
+  text-transform: uppercase;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 14px -7px #5f5f5f;
+  background-image: linear-gradient(
+    45deg,
+    #787878 0%,
+    #535353 51%,
+    #8e8e8e 100%
+  );
+}
+// DISABLED BUTTON ->>
