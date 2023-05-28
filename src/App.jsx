@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLaptop } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLaptop, FaTwitter } from "react-icons/fa";
 import profilePic from "./assets/profilepic.png";
 import "./App.scss";
 
@@ -53,6 +53,24 @@ function App() {
             <a
               className="linkUrl"
               href="https://www.instagram.com/samidcodes/"
+              target="_blank"
+            >
+              <button className="btn">Check out</button>
+            </a>
+          </div>
+        </div>
+        <div className="link_card">
+          <div className="link_description">
+            <FaTwitter className="link_icons" />
+            <h1>Twitter</h1>
+            <p>
+              Follow me on Twitter for web dev inspiration: projects, ideas,
+              coding artistry. Let's create together!
+            </p>
+
+            <a
+              className="linkUrl"
+              href="https://twitter.com/SamidShad"
               target="_blank"
             >
               <button className="btn">Check out</button>
