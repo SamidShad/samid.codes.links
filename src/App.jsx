@@ -52,7 +52,7 @@ function App() {
             </p>
             <a
               className="linkUrl"
-              href="https://www.instagram.com/samidcodes/"
+              href="https://www.instagram.com/samid.codes/"
               target="_blank"
             >
               <button className="btn">Check out</button>
