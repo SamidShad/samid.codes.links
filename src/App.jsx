@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLaptop,
-  FaTwitter,
-  FaThreads,
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLaptop, FaTwitter } from "react-icons/fa";
 import profilePic from "./assets/profilepic.png";
 import "./App.scss";
 
@@ -95,23 +89,6 @@ function App() {
             <a
               className="linkUrl"
               href="https://samidcodesportfolio.netlify.app/"
-              target="_blank"
-            >
-              <button className="btn">Check out</button>
-            </a>
-          </div>
-        </div>
-        <div className="link_card">
-          <div className="link_description">
-            <FaThreads className="link_icons" />
-            <h1>Threads</h1>
-            <p>
-              Discover my interesting threads thought-provoking debates, ideas,
-              and inspiration. Let us investigate ideas and create discussions!
-            </p>
-            <a
-              className="linkUrl"
-              href="https://www.threads.net/@samid.codes"
               target="_blank"
             >
               <button className="btn">Check out</button>
