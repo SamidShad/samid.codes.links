@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaInstagram, FaLaptop, FaTwitter } from "react-icons/fa";
 import profilePic from "./assets/profilepic.png";
 import "./App.scss";
+import { SiThreads } from "react-icons/si";
 
 function App() {
   return (
@@ -82,13 +83,30 @@ function App() {
             <FaLaptop className="link_icons" />
             <h1>Portfolio</h1>
             <p>
-              Explore my portfolio of creative web development for ideas,
-              inventive projects, and code creativity. Let's work together to
-              make ideas a reality!
+              Examine my web development portfolio. Innovation, coding
+              creativity, and never-ending inspiration. Let's make ideas a
+              reality!
             </p>
             <a
               className="linkUrl"
               href="https://samidcodesportfolio.netlify.app/"
+              target="_blank"
+            >
+              <button className="btn">Check out</button>
+            </a>
+          </div>
+        </div>
+        <div className="link_card">
+          <div className="link_description">
+            <SiThreads className="link_icons" />
+            <h1>Threads</h1>
+            <p>
+              Discover my interesting threads thought-provoking debates, ideas,
+              and inspiration. Let us investigate ideas and create discussions!
+            </p>
+            <a
+              className="linkUrl"
+              href="https://www.threads.net/@samid.codes"
               target="_blank"
             >
               <button className="btn">Check out</button>
