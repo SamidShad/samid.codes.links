@@ -81,8 +81,18 @@ function App() {
           <div className="link_description">
             <FaLaptop className="link_icons" />
             <h1>Portfolio</h1>
-            <p>Busy to build my protfolio website soon it will be published</p>
-            <button className="disbtn">On progress</button>
+            <p>
+              Explore my portfolio of creative web development for ideas,
+              inventive projects, and code creativity. Let's work together to
+              make ideas a reality!
+            </p>
+            <a
+              className="linkUrl"
+              href="https://samidcodesportfolio.netlify.app/"
+              target="_blank"
+            >
+              <button className="btn">Check out</button>
+            </a>
           </div>
         </div>
       </div>
