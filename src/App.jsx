@@ -1,8 +1,13 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLaptop, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLaptop,
+  FaTwitter,
+  FaThreads,
+} from "react-icons/fa";
 import profilePic from "./assets/profilepic.png";
 import "./App.scss";
-import { SiThreads } from "react-icons/si";
 
 function App() {
   return (
@@ -98,7 +103,7 @@ function App() {
         </div>
         <div className="link_card">
           <div className="link_description">
-            <SiThreads className="link_icons" />
+            <FaThreads className="link_icons" />
             <h1>Threads</h1>
             <p>
               Discover my interesting threads thought-provoking debates, ideas,
