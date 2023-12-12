@@ -88,7 +88,7 @@ function App() {
             </p>
             <a
               className="linkUrl"
-              href="https://samidcodesportfolio.netlify.app/"
+              href="https://samid-codes-portfolio.vercel.app/"
               target="_blank"
             >
               <button className="btn">Check out</button>
